@@ -21,7 +21,7 @@ const getDevs = catchAsync (async (req,res) => {
 
 
 const getDev = catchAsync (async (req,res) => {
-  console.log('get dev')
+  console.log('get dev logs for test2')
  const dev = await devService.getDevById(req.params.devId);
   if (!dev) {
     throw new ApiError(httpStatus.NOT_FOUND, 'Dev not found');
