@@ -3,6 +3,11 @@ name: CI
 # 1
 # Controls when the workflow will run
 on:
+  pull_request:
+    types:
+      - opened
+    branches:
+      - 'development/'
   # Triggers the workflow on push events but only for the master branch
   push:
     branches: [ development ]
